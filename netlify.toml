@@ -1,1 +1,8 @@
+[build]
+  publish = "public"
+  functions = "functions"
 
+[[redirects]]
+  from = "/bit.ly/:code"
+  to = "/.netlify/functions/redirect?code=:code"
+  status = 200
